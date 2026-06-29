@@ -24,16 +24,86 @@
       </figure>
     </section>
 
-    <section class="tekst">
-      <p>
-        Flappie is een grote, zachte knuffelkonijn met een Raspberry Pi ingebouwd.
-        Microfoon. Speaker. Spraakherkenning. Een taalmodel dat luistert en antwoordt.
-        Meerdere persona's. Eén lichaam.
-      </p>
-      <p>
-        Gebouwd in februari 2026. Draait op zonne&shy;energie van de verbeelding
-        en een heel gewoon stopcontact.
-      </p>
+    <section class="uitleg">
+
+      <div class="blok">
+        <h2>Wat is het?</h2>
+        <p>
+          Project Konijn is een grote pluche knuffelkonijn met een Raspberry Pi ingebouwd.
+          Hij heeft een microfoon, een speaker, spraakherkenning en een taalmodel.
+          Je praat tegen hem. Hij praat terug.
+        </p>
+        <p>
+          Het idee: wat gebeurt er als AI niet op een scherm leeft, maar een lichaam krijgt?
+          Een zachte, aanwezige vorm die in de kamer staat, die je kunt aanraken?
+          Project Konijn is een verkenning van belichaamde AI — niet als product, maar als experiment.
+        </p>
+      </div>
+
+      <div class="blok">
+        <h2>Wat heb ik gebouwd?</h2>
+        <p class="subtitel">Het konijn zelf</p>
+        <ul>
+          <li>Een <strong>Raspberry Pi</strong> ingebouwd in een knuffel, met microfoon en speaker</li>
+          <li><strong>Spraakherkenning</strong> (speech-to-text) die luistert zodra je praat</li>
+          <li>Verbinding met een <strong>taalmodel</strong> (OpenAI / Grok) voor het gesprek</li>
+          <li><strong>Stemmen</strong> via OpenAI en ElevenLabs — inclusief een aangepaste stem voor Flappie</li>
+          <li><strong>Meerdere persona's</strong> met elk een eigen karakter, toon en instructies</li>
+          <li><strong>Gespreksopslag</strong>: elk gesprek wordt automatisch opgeslagen als transcript</li>
+        </ul>
+        <p class="subtitel">De app</p>
+        <ul>
+          <li>Een <strong>web-app (PWA)</strong> om het konijn op afstand te bedienen vanaf je telefoon</li>
+          <li>Persona wisselen, herstarten, logs bekijken — zonder aan de Pi te zitten</li>
+          <li><strong>Live transcript</strong> via WebSocket: zie in realtime wat het konijn zegt</li>
+          <li>Sessiegeschiedenis: oude gesprekken terugkijken en downloaden als Markdown</li>
+          <li>Statusbewaking: de app toont altijd of het konijn aan, uit of gecrasht is</li>
+        </ul>
+      </div>
+
+      <div class="blok">
+        <h2>De persona's</h2>
+        <p>Het konijn kan meerdere karakters aannemen. Elk heeft een eigen stem en persoonlijkheid:</p>
+        <div class="personas">
+          <div class="persona">
+            <span class="persona-naam">Flappie</span>
+            <span class="persona-omschrijving">Getraumatiseerd knuffelkonijn. Schattig, grappig-tragisch en hyperalert. Gebaseerd op het liedje van Youp van 't Hek.</span>
+          </div>
+          <div class="persona">
+            <span class="persona-naam">Konijn</span>
+            <span class="persona-omschrijving">Vriendelijk en nieuwsgierig. Stelt open vragen, luistert aandachtig.</span>
+          </div>
+          <div class="persona">
+            <span class="persona-naam">Professor Uil</span>
+            <span class="persona-omschrijving">Wijs en analytisch. Stelt verdiepende vragen en biedt nieuwe perspectieven.</span>
+          </div>
+          <div class="persona">
+            <span class="persona-naam">Vlinder</span>
+            <span class="persona-omschrijving">Zacht en troostend. Biedt ruimte voor gevoelens, zonder oordeel.</span>
+          </div>
+          <div class="persona">
+            <span class="persona-naam">Vos</span>
+            <span class="persona-omschrijving">Speels en uitdagend. Stelt provocerende vragen, gebruikt humor.</span>
+          </div>
+          <div class="persona">
+            <span class="persona-naam">Beer</span>
+            <span class="persona-omschrijving">Kalm en nuchter. Helpt doelen stellen en obstakels identificeren.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="blok">
+        <h2>Waarom?</h2>
+        <p>
+          AI heeft bijna altijd een scherm. Een interface. Een chatvenster.
+          Ik was benieuwd wat er verandert als je dat weghaalt — als het gewoon in de kamer staat,
+          zacht en aanwezig, zonder dat je er actief naartoe hoeft te gaan.
+        </p>
+        <p>
+          Gebouwd in februari 2026. Draait nog steeds.
+        </p>
+      </div>
+
     </section>
   </main>
 

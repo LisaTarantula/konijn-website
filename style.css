@@ -102,19 +102,99 @@ figure:hover img {
   transform: scale(1.03);
 }
 
-/* Tekst */
+/* Uitleg */
 
-.tekst {
+.uitleg {
   display: flex;
   flex-direction: column;
-  gap: 0.9rem;
-  max-width: 540px;
+  gap: 3rem;
 }
 
-.tekst p {
+.blok h2 {
+  font-size: 1rem;
+  font-weight: normal;
+  font-family: system-ui, sans-serif;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.blok p {
   font-size: 0.95rem;
-  line-height: 1.75;
+  line-height: 1.8;
   color: #bfb8ae;
+  margin-bottom: 0.8rem;
+  max-width: 580px;
+}
+
+.subtitel {
+  font-family: system-ui, sans-serif;
+  font-size: 0.75rem !important;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted) !important;
+  margin-top: 1.5rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.blok ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 580px;
+}
+
+.blok ul li {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #bfb8ae;
+  padding-left: 1.2rem;
+  position: relative;
+}
+
+.blok ul li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--muted);
+}
+
+.blok ul li strong {
+  color: var(--text);
+  font-weight: normal;
+}
+
+/* Persona's */
+
+.personas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.persona {
+  background: var(--bg2);
+  border-radius: 4px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.persona-naam {
+  font-family: system-ui, sans-serif;
+  font-size: 0.8rem;
+  color: var(--accent);
+  letter-spacing: 0.03em;
+}
+
+.persona-omschrijving {
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: var(--muted);
 }
 
 /* Footer */
